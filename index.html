@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDACT Assignment</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="rectangle">
+        <h4>Main Text</h4>
+
+        <div class="inputText">
+          <input
+            type="text"
+            id="mainText"
+            name="mainText"
+            placeholder="Enter your main text"
+          />    
+        </div>
+        <h4>Scrambled Words (separated by space)</h4>
+
+        <div class="inputText">
+          <input
+            type="text"
+            id="scrambleWords"
+            name="scrambleWords"
+            placeholder="Enter words to scramble"
+          />  
+        </div>
+       
+        <h4>Redaction Character</h4>
+
+        <div class="inputText">
+          <input
+            type="text"
+            id="redactCharacter"
+            name="redactCharacter"
+            placeholder="Type your redaction character e.g ****"
+          />
+        </div>
+
+        <div>
+          <button  
+          id="redactButton"
+          name="redactButton">
+          Redact Now
+        </button>
+        </div>
+
+        <h4>Result</h4>
+        <div id="resultContainer">
+
+        </div>
+       
+      </div>
+    </main>
+  </body>
+</html>
