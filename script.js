@@ -13,7 +13,7 @@ const redactFunction = () => {
 
     const mainText = mainTextEl.value;
     const scrambledText = redactWordsEl.value;
-    const wordType = redactCharacterEl.value;
+    const replacedWord = redactCharacterEl.value;
 
     const mainWords = mainText.toLowerCase().split(' ');
     const redactedWords = scrambledText.toLowerCase().split(' ');
@@ -25,10 +25,10 @@ const redactFunction = () => {
 
 
     const redactedText = mainWords.map(word =>
-        redactedWords.includes(word) ? wordType : word
+        redactedWords.includes(word) ? replacedWord : word
     ).join(' ');
 
-    if (redactedText.includes(wordType)) {
+    if (redactedText.includes(replacedWord)) {
         console.log(redactedText);
     } else {
         console.log('Text not found in mainText.');
@@ -43,5 +43,5 @@ const redactFunction = () => {
     `;
 }
 
-// Listen for button click and call scrambledFunction
+// Listen for button click and call redactFunction
 redactButtonEl.addEventListener("click", redactFunction);
